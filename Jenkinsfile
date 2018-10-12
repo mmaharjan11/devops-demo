@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Build Job') {
       steps {
-        echo 'Hello World'
+        build 'deploy-maven-project'
       }
     }
   }
